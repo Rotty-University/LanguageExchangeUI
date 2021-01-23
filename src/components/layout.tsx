@@ -1,10 +1,18 @@
-import React from 'react';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
 
 function Layout() {
   return (
-    <div className="root">
-      <p>Testing commit to organization after transfer</p>
-    </div>
+    <Router>
+      <Switch>
+          <Route exact path="/">
+            <p>Language Exchange</p>
+          </Route>
+        </Switch>
+    </Router>
   );
 }
 
