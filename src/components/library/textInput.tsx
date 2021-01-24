@@ -1,8 +1,9 @@
 
-function TextInput() {
+function TextInput(props:any) {
     return (
-        <div>
-            <input type="text" />
+        <div className="text-input">
+            <label>{props.label}</label>
+            <input type={props.type || "text"} />
         </div>
     )
 }
