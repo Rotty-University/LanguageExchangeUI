@@ -6,3 +6,25 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.navigation-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.body-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dashboard-input {
+  display: flex;
+  flex-direction: column;
+}
