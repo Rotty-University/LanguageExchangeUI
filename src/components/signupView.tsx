@@ -1,9 +1,6 @@
 import TextInput from "./library/textInput";
 
 import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
     Link
 } from "react-router-dom";
 
