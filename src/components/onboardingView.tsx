@@ -127,7 +127,7 @@ function OnboardingView(props:any) {
                                 <span>I can hold a conversation with a native speaker</span>
                             </div>
                         </div>
-                        <Link to={generatePath("/dasboard/:userid", {
+                        <Link to={generatePath("/dashboard/:userid", {
                         userid: props.match.params.userId
                         })}>
                             <RightLogo />

@@ -3,6 +3,9 @@ $green: #4DBB72;
 $white: #fff;
 $lightgray: #DFDFDF;
 $lightblue: #A7DFFF;
+$black: #000;
+$orange: #FFA462;
+$blue: #5C80FF;
 
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 @import url("https://use.typekit.net/vmt4pzl.css%22");
@@ -234,4 +237,71 @@ body {
     font-size: .9rem;
     max-width: 125px;
   }
+}
+
+.dashboard-nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.1));
+  
+  .logo-container {
+    margin: 1rem;
+  }
+
+  .dashboard-nav-links {
+    font-family: 'report', sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+
+    a {
+      text-decoration: none;
+      color: $black;
+      margin-right: 1rem;
+      margin-left: 1rem;
+    }
+  }
+}
+
+.body-container {
+  padding: 3.66rem;
+  font-size: 1.33rem;
+  font-weight: bold;
+  flex-direction: column;
+  border: 1px solid $black;
+
+  .button-primary {
+    align-self: flex-end;
+  }
+
+  span {
+    margin: 2rem 0;
+  }
+
+  .dashboard-input {
+    .call-selection-container {
+      align-self: center;
+      .call-type-button {
+        background-color: $orange;
+        border: none;
+        font-size: 1.33rem;
+        color: $white;
+        padding: 48px 12px;
+        margin: 1rem;
+      }
+    }
+
+    .language-container {
+      align-self: center;
+
+      .language-button {
+        background-color: $blue;
+        border: none;
+        color: $white;
+        margin: 1rem;
+        padding: 24px 12px;
+      }
+    }
+  }
+
 }
